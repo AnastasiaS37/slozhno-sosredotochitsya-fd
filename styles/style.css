@@ -2,6 +2,147 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-url);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-/* Test */
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  padding: 7px 10px;
+  /* position: relative; */
+  height: max(100vh, 375px);
+  align-items: center;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+
+.decor {
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--accent-color);
+  position: absolute;
+  top: 10px;
+  right: 38px;
+}
+
+.decor::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  right: -19px;
+  top: 8px;
+}
+
+.header__theme-menu {
+  justify-self: right;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* align-items: center; */
+}
+
+.header__theme-menu-item {
+}
+
+.header__theme-menu-button {
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: lowercase;
+  color: var(--accent-color);
+  background-color: transparent;
+  border: none;
+  min-width: 70px;
+  min-height: 26px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__title {
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: var(--header-title);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  /* Для планшета и десктопа 
+clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) */
+}
+
+.header__description {
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--header-description);
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+}
+
+.content-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.content-section__title {
+
+}
+
+.wrapper {
+
+}
+
+.content-section__article {
+
+}
+
+.content-section__article-title {
+
+}
+
+.content-section__article-text {
+
+}
+
+.content-section__article-subtitle {
+
+}

@@ -4,8 +4,9 @@
 */
 
 :root {
-  --header-title: #db00ff;
+  --header-title-color: #db00ff;
   --accent-color: #ff0070;
-  --header-description: #000028;
-  --bg-url: url(../images/cover-image-dark.png)
+  --accent-text-color: #000028;
+  --bg-url: url(../images/cover-image-dark.png);
+  --article-text-color: #f1b2ce;
 }

@@ -75,6 +75,7 @@
 }
 
 .header__theme-menu-button {
+  appearance: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
@@ -261,17 +262,17 @@
     gap: 80px;
   }
 
-  .content-section_type-title-side {
+  .content-section_type-partial-width-text {
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
   }
 
-  .content-section_type-title-top {
+  .content-section_type-full-width-text {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
   }
 
-  .content-section__wrapper_type-title-top {
+  .content-section__wrapper_type-full-width-text {
     grid-column: 1 / span 3;
   }
 
@@ -327,11 +328,11 @@
     width: max(calc(50vw - 42px), 491px);
   }
 
-  .content-section_type-title-side {
+  .content-section_type-partial-width-text {
     column-gap: 10px;
   }
 
-  .content-section__wrapper_type-title-top {
+  .content-section__wrapper_type-full-width-text {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
